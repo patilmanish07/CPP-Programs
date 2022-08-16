@@ -1,0 +1,47 @@
+// Accept two strings from user & Copy data of second string to first string. Or String Concanitate.
+// Or Strings concanitate. just reverse order.
+
+#include<iostream>
+using namespace std;
+
+void strcatX(char *src, char *dest)      //Src=Source & dest=Destination.
+{
+   while(*src != '\0')
+   {
+	   src++;
+   }	   
+   
+   while(*dest != '\0')
+   {
+	   *src = *dest;
+	   src++;
+	   dest++;
+   }
+   *src ='\0';
+}	
+
+int main()
+{
+	char Arr[20];       //Full book
+	char Brr[20];       //empty book
+	
+	cout<<"Enter first string"<<endl;       
+	cin.getline(Arr,20); 
+
+	cout<<"Enter second string"<<endl;       
+	cin.getline(Brr,20);	
+	
+	strcatX(Arr,Brr);        
+	
+    cout<<"String after concatination :"<<Arr<<endl; 
+	
+	return 0;
+	
+}
+
+
+
+
+
+
+

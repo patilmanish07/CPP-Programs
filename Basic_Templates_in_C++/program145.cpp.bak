@@ -1,0 +1,37 @@
+// Template for problems on Numbers in C++.
+
+#include<stdio.h>
+using namespace std;
+
+class Number
+{
+	private:
+	       int iNo;             //Characteristics
+	
+	public:
+	     //Behaviours
+		 void Accept()           // Setter
+		 {
+			 cout<<"Enter the value :"<<endl;
+			 cin>>this->iNo;
+		 }
+		 
+		 void Display()           // Getter
+		 {
+			 cout<<"Value is :"<<this->iNo<<endl;
+		 }
+		 
+		 // Add Functions here with the logic
+};
+
+int main()
+{
+	Number nobj;
+	
+	nobj.Accept();
+	nobj.Display();
+	
+	nobj.____________();
+	
+	return 0;
+} 

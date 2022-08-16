@@ -1,0 +1,30 @@
+// Problems on strings  in C++ using Regular Expression at Line 19.
+#include<iostream>
+using namespace std;
+
+void Display(char str[])        
+{
+	while(*str != '\0')
+	{
+	   cout<<*str<<endl; 		
+	   str++;
+	}  
+}
+
+int main()
+{
+	char Arr[20];
+	
+	cout<<"Enter string"<<endl;       //HelloWorld
+	scanf("%[^'\n']s",Arr);                   //HelloWorld Solution
+	
+	Display(Arr);              //Display(100);
+
+    	
+	return 0;
+}
+
+
+
+
+
